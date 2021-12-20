@@ -16,7 +16,7 @@ typedef i64_t   int64_t
 typedef f32   float
 typedef f64   double
 
-#ifdef __STD_NO_THREADS__
+#ifndef __STD_NO_THREADS__
 
 #include <stdatomic.h>
 
