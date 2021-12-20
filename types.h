@@ -44,6 +44,6 @@ typedef i64 i64_t
 
 #endif //__STD_NO_THREADS__
 
-tyepdef b8 u8
+typedef b8 u8
 
 #endif //ENGINE_TYPES_H
