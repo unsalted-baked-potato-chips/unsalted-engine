@@ -36,7 +36,7 @@ Non errorable functions that return information should be inlined.
 
 ## Scope
 
-Keep external libraries out of scope of the headers for internal libraries. This takes precedence over inlining.
+The standard C library is considerered an external library, although this is intended to be statically linked against MUSL.
 
 Never use goto to break scope of a function.
 
@@ -49,4 +49,6 @@ Unsalted engine defaults to using fast atomic types. This means they may be larg
 Always explicitly cast types to expected types when passing to external libraries even when they may appear to be identical.
 
 Use types defined by internal libraries. This includes specifiers like UINLINE.
+
+
 
