@@ -9,7 +9,7 @@ static const char prefix[][] = {
   [WARN] = "WARN",
   [ERROR] = "ERROR",
   [FATAL] = "FATAL"
-}
+};
 
 void set_ulog_stream(FILE * stream){
   log_stream = stream;
