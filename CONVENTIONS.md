@@ -33,6 +33,15 @@ Errorable funcions should always return error status as an i8.
 Only inline functions may return non-primitives.
 
 Non errorable functions that return information should be inlined.
+
+## Scope
+
+Keep external libraries out of scope of the headers for internal libraries. This takes precedence over inlining.
+
+Never use goto to break scope of a function.
+
+Never use gotos to enter a scope without variables currently on the stack
+
 ## Typing
 
 Unsalted engine defaults to using fast atomic types. This means they may be larger than they are expected to be. 
