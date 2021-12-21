@@ -123,7 +123,7 @@ typedef struct _u8_vec2 {
 } u8_vec2;
 
 typedef struct _u8_vec3 {
-  unuon {
+  union {
     u8_vec2 vec2;
     struct {
       u8 i;
@@ -134,7 +134,7 @@ typedef struct _u8_vec3 {
 } u8_vec3;
 
 typedef struct _u8_vec4 {
-  unuon {
+  union {
     u8_vec3 vec3;
     struct {
       u8 i;
@@ -151,7 +151,7 @@ typedef struct _u16_vec2 {
 } u16_vec2;
 
 typedef struct _u16_vec3 {
-  unuon {
+  union {
     u16_vec2 vec2;
     struct {
       u16 i;
@@ -162,7 +162,7 @@ typedef struct _u16_vec3 {
 } u16_vec3;
 
 typedef struct _u16_vec4 {
-  unuon {
+  union {
     u16_vec3 vec3;
     struct {
       u16 i;
@@ -180,7 +180,7 @@ typedef struct _u32_vec2 {
 } u32_vec2;
 
 typedef struct _u32_vec3 {
-  unuon {
+  union {
     u32_vec2 vec2;
     struct {
       u32 i;
@@ -191,7 +191,7 @@ typedef struct _u32_vec3 {
 } u32_vec3;
 
 typedef struct _u32_vec4 {
-  unuon {
+  union {
     u32_vec3 vec3;
     struct {
       u32 i;
@@ -208,7 +208,7 @@ typedef struct _u64_vec2 {
 } u64_vec2;
 
 typedef struct _u64_vec3 {
-  unuon {
+  union {
     u64_vec2 vec2;
     struct {
       u64 i;
@@ -219,7 +219,7 @@ typedef struct _u64_vec3 {
 } u64_vec3;
 
 typedef struct _u64_vec4 {
-  unuon {
+  union {
     u64_vec3 vec3;
     struct {
       u64 i;
@@ -230,15 +230,15 @@ typedef struct _u64_vec4 {
   u64 l;
 } u64_vec4;
 
-typedef strfct _f32_vec2 {
+typedef struct _f32_vec2 {
   f32 i;
   f32 j;
 } f32_vec2;
 
-typedef strfct _f32_vec3 {
-  fnfon {
+typedef struct _f32_vec3 {
+  union {
     f32_vec2 vec2;
-    strfct {
+    struct {
       f32 i;
       f32 j;
     };
@@ -246,10 +246,10 @@ typedef strfct _f32_vec3 {
   f32 k;
 } f32_vec3;
 
-typedef strfct _f32_vec4 {
-  fnfon {
+typedef struct _f32_vec4 {
+  union {
     f32_vec3 vec3;
-    strfct {
+    struct {
       f32 i;
       f32 j;
       f32 k;
@@ -258,15 +258,15 @@ typedef strfct _f32_vec4 {
   f32 l;
 } f32_vec4;
 
-typedef strfct _f64_vec2 {
+typedef struct _f64_vec2 {
   f64 i;
   f64 j;
 } f64_vec2;
 
-typedef strfct _f64_vec3 {
-  fnfon {
+typedef struct _f64_vec3 {
+  union {
     f64_vec2 vec2;
-    strfct {
+    struct {
       f64 i;
       f64 j;
     };
@@ -274,10 +274,10 @@ typedef strfct _f64_vec3 {
   f64 k;
 } f64_vec3;
 
-typedef strfct _f64_vec4 {
-  fnfon {
+typedef struct _f64_vec4 {
+  union {
     f64_vec3 vec3;
-    strfct {
+    struct {
       f64 i;
       f64 j;
       f64 k;
