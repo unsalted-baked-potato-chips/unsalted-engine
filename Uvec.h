@@ -296,14 +296,9 @@ typedef struct _f64_vec4 {
 #define DOT_VEC4(vec_a, vec_b) \
   (DOT_VEC3((vec_a).vec3, (vec_b).vec3) + (vec_a).l * (vec_b).l)
 
-#define CROSS_VEC2
-
 #define CROSS_VEC3(vec_a, vec_b, vec_t) \
   ((vec_t) { ((vec_a).j * (vec_b).k - (vec_a).k * (vec_b).j), \
   ((vec_a).k * (vec_b).i - (vec_a).i * (vec_b).k), \
   ((vec_a).i * (vec_b).j - (vec_a).j * (vec_b).i) } )
-
-#define CROSS_VEC4
-
 
 #endif //UNSALTED_VEC_H
