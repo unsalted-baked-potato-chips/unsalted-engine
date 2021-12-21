@@ -3,6 +3,7 @@
 
 #include "Utypes.h"
 #include "Udefine.h"
+#include "Umath.h"
 
 typedef struct _i8_vec2 {
   i8 i;
@@ -287,6 +288,13 @@ typedef struct _f64_vec4 {
   f64 l;
 } f64_vec4;
 
+#define MAGN_VEC2(vec_a) \
+  (u_sqrt((double) ((vec_a).i * (vec_a).i + (vec_a).j * (vec_a).j)))
+#define MAGN_VEC3(vec_a) \
+  (u_sqrt((double) ((vec_a).i * (vec_a).i + (vec_a).j * (vec_a).j + (vec_a).k * (vec_a).k))))
+#define MAGN_VEC4(vec_a) \
+  (u_sqrt((double) ((vec_a).i * (vec_a).i + (vec_a).j * (vec_a).j + (vec_a).k * (vec_a).k + (vec_a).l * (vec_a).l))))
+
 #define DOT_VEC2(vec_a, vec_b) \
   ((vec_a).i * (vec_b).i + (vec_a).j * (vec_b).j)
 
@@ -344,3 +352,5 @@ UINLINE f64_vec3 cross_f64_vec3(f64_vec3 vec_a, f64_vec3 vec_b){
   } 
 }
 #endif //UNSALTED_VEC_H
+
+
