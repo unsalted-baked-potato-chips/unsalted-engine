@@ -23,3 +23,10 @@ Define error status as macros in header file for errorable functions.
 Cleanup all dynamic memory before returning using a goto label.
 
 Use Ulog.h with appropriate log levels.
+
+## Typing
+
+Unsalted engine defaults to using fast atomic types. This means they may be larger than they are expected to be. 
+
+Always explicitly cast types to expected types when passing to external libraries even when they may appear to be identical.
+
