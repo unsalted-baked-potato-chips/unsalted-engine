@@ -1,5 +1,5 @@
-#ifndef ENGINE_TYPES_H
-#define ENGINE_TYPES_H
+#ifndef UNSALTED_ENGINE_TYPES_H
+#define UNSALTED_ENGINE_TYPES_H
 
 #include <stdint.h>
 
@@ -46,4 +46,4 @@ typedef i64 i64_t
 
 typedef b8 u8
 
-#endif //ENGINE_TYPES_H
+#endif //UNSALTED_ENGINE_TYPES_H
