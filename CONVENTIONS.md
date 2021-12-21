@@ -30,7 +30,7 @@ Only use function-like macros when you require functionality that inlining canno
 
 Errorable funcions should always return error status as an i8.
 
-Only return non-primitives in inline functions.
+Only inline functions may return non-primitives.
 
 Non errorable functions that return information should be inlined.
 ## Typing
