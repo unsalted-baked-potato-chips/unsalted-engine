@@ -2,6 +2,7 @@
 #define UNSALTED_VEC_H
 
 #include "Utypes.h"
+#include "Udefine.h"
 
 typedef struct _i8_vec2 {
   i8 i;
@@ -285,5 +286,14 @@ typedef struct _f64_vec4 {
   };
   f64 l;
 } f64_vec4;
+
+#define DOT_PROD_VEC2(vec_a, vec_b) \
+  ((vec_a).i * (vec_b).i + (vec_a).j * (vec_b).j)
+
+#define DOT_PROD_VEC3(vec_a, vec_b) \
+  (DOT_PROD_VEC2((vec_a).vec2, (vec_b).vec2) + (vec_a).k * (vec_b).k)
+
+#define DOT_PROD_VEC4(vec_a, vec_b) \
+  (DOT_PROD_VEC3((vec_a).vec3, (vec_b).vec3) + (vec_a).l * (vec_b).l)
 
 #endif //UNSALTED_VEC_H
