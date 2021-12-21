@@ -313,6 +313,15 @@ typedef struct _f64_vec4 {
 #define ADD_VEC4(vec_a, vec_b, vec_t) \
   ((vec_t) { ((vec_a).i + (vec_b).i), ((vec_a).j + (vec_b).j), ((vec_a).k + (vec_b).k), ((vec_a).l + (vec_b).l)  })
 
+#define SUB_VEC2(vec_a, vec_b, vec_t) \
+  ((vec_t) { ((vec_a).i - (vec_b).i), ((vec_a).j - (vec_b).j) })
+
+#define SUB_VEC3(vec_a, vec_b, vec_t) \
+  ((vec_t) { ((vec_a).i - (vec_b).i), ((vec_a).j - (vec_b).j), ((vec_a).k - (vec_b).k)  })
+
+#define SUB_VEC4(vec_a, vec_b, vec_t) \
+  ((vec_t) { ((vec_a).i - (vec_b).i), ((vec_a).j - (vec_b).j), ((vec_a).k - (vec_b).k), ((vec_a).l - (vec_b).l)  })
+
 UINLINE i8_vec3 cross_i8_vec3(i8_vec3 vec_a, i8_vec3 vec_b){
    return   (i8_vec3) {
     ((vec_a).j * (vec_b).k - (vec_a).k * (vec_b).j), 
