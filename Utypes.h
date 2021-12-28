@@ -3,47 +3,47 @@
 
 #include <stdint.h>
 
-typedef u8_t    uint8_t
-typedef u16_t   uint16_t
-typedef u32_t   uint32_t
-typedef u64_t   uint64_t
+typedef uint8_t u8_t;
+typedef uint16_t u16_t;
+typedef uint32_t u32_t;
+typedef uint64_t u64_t;
 
-typedef i8_t    int8_t
-typedef i16_t   int16_t
-typedef i32_t   int32_t
-typedef i64_t   int64_t
+typedef int8_t i8_t ;
+typedef int16_t i16_t;   
+typedef int32_t i32_t ;  
+typedef int64_t i64_t  ; 
 
-typedef f32   float
-typedef f64   double
+typedef float f32   ;
+typedef double f64   ;
 
 #ifndef __STD_NO_THREADS__
 
 #include <stdatomic.h>
 
-typedef u8  atomic_uint_fast8_t
-typedef u16 atomic_uint_fast16_t
-typedef u32 atomic_uint_fast32_t
-typedef u64 atomic_uint_fast64_t
+typedef atomic_uint_fast8_t u8  ;
+typedef atomic_uint_fast16_t u16 ;
+typedef atomic_uint_fast32_t u32 ;
+typedef atomic_uint_fast64_t u64    ;
 
-typedef i8  atomic_int_fast8_t
-typedef i16 atomic_int_fast16_t
-typedef i32 atomic_int_fast32_t
-typedef i64 atomic_int_fast64_t
+typedef atomic_int_fast8_t i8  ;
+typedef atomic_int_fast16_t i16 ;
+typedef atomic_int_fast32_t i32 ;
+typedef atomic_int_fast64_t i64 ;
 
 #else
 
-typedef u8 u8_t
-typedef u16 u16_t
-typedef u32 u32_t
-typedef u64 u64_t
+typedef u8_t u8 ;
+typedef u16_t u16 ;
+typedef u32_t u32 ;
+typedef u64_t u64 ;
 
-typedef i8  i8_t
-typedef i16 i16_t
-typedef i32 i32_t
-typedef i64 i64_t
+typedef i8_t i8  ;
+typedef i16_t i16 ;
+typedef i32_t i32  ;
+typedef i64_t i64 ;
 
 #endif //__STD_NO_THREADS__
 
-typedef b8 u8
+typedef u8 b8 ;
 
 #endif //UNSALTED_ENGINE_TYPES_H

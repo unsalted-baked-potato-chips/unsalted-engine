@@ -326,48 +326,48 @@ UINLINE i8_vec3 cross_i8_vec3(i8_vec3 vec_a, i8_vec3 vec_b){
    return   (i8_vec3) {
     ((vec_a).j * (vec_b).k - (vec_a).k * (vec_b).j), 
     ((vec_a).k * (vec_b).i - (vec_a).i * (vec_b).k), 
-    ((vec_a).i * (vec_b).j - (vec_a).j * (vec_b).i) 
-  } 
+    ((vec_a).i * (vec_b).j - (vec_a).j * (vec_b).i)
+  } ;
 }
 
 UINLINE i16_vec3 cross_i16_vec3(i16_vec3 vec_a, i16_vec3 vec_b){
    return   (i16_vec3) {
     ((vec_a).j * (vec_b).k - (vec_a).k * (vec_b).j), 
     ((vec_a).k * (vec_b).i - (vec_a).i * (vec_b).k), 
-    ((vec_a).i * (vec_b).j - (vec_a).j * (vec_b).i) 
-  } 
+    ((vec_a).i * (vec_b).j - (vec_a).j * (vec_b).i)
+  } ;
 }
 
 UINLINE i32_vec3 cross_i32_vec3(i32_vec3 vec_a, i32_vec3 vec_b){
    return   (i32_vec3) {
     ((vec_a).j * (vec_b).k - (vec_a).k * (vec_b).j), 
     ((vec_a).k * (vec_b).i - (vec_a).i * (vec_b).k), 
-    ((vec_a).i * (vec_b).j - (vec_a).j * (vec_b).i) 
-  } 
+    ((vec_a).i * (vec_b).j - (vec_a).j * (vec_b).i)
+  } ;
 }
 
 UINLINE i64_vec3 cross_i64_vec3(i64_vec3 vec_a, i64_vec3 vec_b){
    return   (i64_vec3) {
     ((vec_a).j * (vec_b).k - (vec_a).k * (vec_b).j), 
     ((vec_a).k * (vec_b).i - (vec_a).i * (vec_b).k), 
-    ((vec_a).i * (vec_b).j - (vec_a).j * (vec_b).i) 
-  } 
+    ((vec_a).i * (vec_b).j - (vec_a).j * (vec_b).i)
+  } ;
 }
 
 UINLINE f32_vec3 cross_f32_vec3(f32_vec3 vec_a, f32_vec3 vec_b){
    return   (f32_vec3) {
     ((vec_a).j * (vec_b).k - (vec_a).k * (vec_b).j), 
     ((vec_a).k * (vec_b).i - (vec_a).i * (vec_b).k), 
-    ((vec_a).i * (vec_b).j - (vec_a).j * (vec_b).i) 
-  } 
+    ((vec_a).i * (vec_b).j - (vec_a).j * (vec_b).i)
+  } ;
 }
 
 UINLINE f64_vec3 cross_f64_vec3(f64_vec3 vec_a, f64_vec3 vec_b){
    return   (f64_vec3) {
     ((vec_a).j * (vec_b).k - (vec_a).k * (vec_b).j), 
     ((vec_a).k * (vec_b).i - (vec_a).i * (vec_b).k), 
-    ((vec_a).i * (vec_b).j - (vec_a).j * (vec_b).i) 
-  } 
+    ((vec_a).i * (vec_b).j - (vec_a).j * (vec_b).i)
+  } ;
 }
 #endif //UNSALTED_VEC_H
 
