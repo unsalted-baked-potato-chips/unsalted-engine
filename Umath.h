@@ -1,10 +1,7 @@
 #ifndef UNSALTED_ENGINE_MATH_H
 #define UNSALTED_ENGINE_MATH_H
 
-#if defined(__i386__) || defined(__x86_64__) 
-#include <immintrin.h>
-#endif
-#include <math.h>
+#include "Utypes.h"
 
 #define M_E             2.7182818284590452354   /* e */
 #define M_LOG2E         1.4426950408889634074   /* log_2 e */
@@ -20,17 +17,6 @@
 #define M_SQRT2         1.41421356237309504880  /* sqrt(2) */
 #define M_SQRT1_2       0.70710678118654752440  /* 1/sqrt(2) */
 
-UINLINE f64 inv_sqrt64(f64 a){
-  return 1.0/sqrt(x);
-}
-
-UINLINE f32 inv_sqrt32(f32 a){
-#if defined(__i386__) || defined(__x86_64__)
-    __m128 temp = _mm_set_ss(f);
-    temp = _mm_rsqrt_ss(temp);
-    return _mm_cvtss_f32(temp);
-#else
-  return 1.0/sqrtf(x);
-#endif
-}
+f64 inv_sqrt64(f64 a);
+f32 inv_sqrt32(f32 a);
 #endif //UNSALTED_ENGINE_MATH_H
